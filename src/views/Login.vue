@@ -21,9 +21,6 @@ export default {
     return {
       client_id: process.env.VUE_APP_CLIENT_ID,
     };
-  },
-  mounted(){
-    console.log(this.$route);
   }
 };
 </script>
