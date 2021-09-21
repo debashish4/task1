@@ -1,0 +1,2 @@
+export const SAVE_CLIENT_CODE = "SAVE_CLIENT_CODE";
+export const SAVE_ACCESS_TOKEN = "SAVE_ACCESS_TOKEN";
