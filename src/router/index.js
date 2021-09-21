@@ -30,10 +30,9 @@ const routes = [
 
   }
 ]
-
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+  mode: 'hash',
+  base: process.env.NODE_ENV === 'development' ? process.env.BASE_URL : process.env.VUE_APP_BASE_URL,
   routes
 })
 

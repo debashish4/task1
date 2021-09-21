@@ -1,14 +1,4 @@
 import axios from 'axios';
-import { client_id } from "../constant/api_constant"
-
-export const getLoginWindow = () => {
-    return axios({
-        method: 'GET',
-        url: `https://github.com/login/oauth/authorize?scope=user&client_id=${client_id}&redirect_uri=http://localhost:3000/login`,
-
-    })
-}
-
 
 export const getAccessToken = (client_id, client_secret, code) => {
     return axios({
