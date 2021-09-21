@@ -35,6 +35,7 @@ export default {
     };
   },
   mounted() {
+    console.log(this.$route);
     let code = this.$route["query"]["code"];
     this.saveClientCode(code);
     getAccessToken(this.client_id, this.client_secret, this.client_code).then(
